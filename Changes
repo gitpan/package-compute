@@ -6,6 +6,10 @@ Home page:    <https://metacpan.org/release/package-compute>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=package-compute>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.003  2012-11-27
+
+ - (Packaging) Make sure t/02usage.t does not depend on Perl 5.10.
+
 0.002  2012-11-27
 
  - (Addition) Provide 'use package::compute -anon' to compute an anonymous
