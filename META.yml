@@ -31,4 +31,4 @@ resources:
   homepage: https://metacpan.org/release/package-compute
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-package-compute
-version: 0.001
+version: 0.002

@@ -6,6 +6,8 @@ the source repository rather than using the CPAN distribution. The file
 META.yml should contain a link to the source repository. If not, then
 try https://bitbucket.org/tobyink or e-mail tobyink@cpan.org.
 
+Many of my distributions are also mirrored at http://github.com/tobyink.
+
 
 Source code formatting and white space
 --------------------------------------

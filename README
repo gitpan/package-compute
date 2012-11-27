@@ -88,6 +88,12 @@ DESCRIPTION
     Which will attempt to determine the package name based on the filename
     it is defined in, much like "autopackage" does.
 
+    Also:
+
+       use package::compute -anon;
+
+    Will compute an "anonymous" (i.e. arbitrary) package name.
+
   Utility Function
     This module also exports a utility function:
 
@@ -109,7 +115,8 @@ DESCRIPTION
         As you can see, this makes it possible to avoid hard-coded
         references to the MyProject::Person class.
 
-        "__RPACKAGE__" doesn't support the special "-filename" option.
+        "__RPACKAGE__" doesn't support the special "-filename" and "-anon"
+        options.
 
         It is possible to import the "__RPACKAGE__" function alone, without
         the package declaration magic using:

@@ -34,5 +34,6 @@ README
 t/01basic.t
 t/02usage.t
 t/03auto.t
+t/04anon.t
 t/My/Package.pm
 SIGNATURE                                Public-key signature (added by MakeMaker)
