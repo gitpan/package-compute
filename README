@@ -46,9 +46,9 @@ DESCRIPTION
     *   The component "." at the start of the package name refers to the
         caller. ("." elsewhere is a no-op.)
 
-    *   The component ".." climbs "up" the package heirarchy.
+    *   The component ".." climbs "up" the package hierarchy.
 
-    *   The component "..." climbs "up" the package heirarchy by two levels.
+    *   The component "..." climbs "up" the package hierarchy by two levels.
         Et cetera.
 
     Thus the following are all valid ways of expressing package "Foo::Bar":
@@ -66,17 +66,17 @@ DESCRIPTION
        use package::compute "./Bar";
        ####
    
-       ### Climbing the package heirarchy
+       ### Climbing the package hierarchy
        package Foo::XXX;
        use package::compute "../Bar";
        ####
    
-       ### Climbing the package heirarchy twice
+       ### Climbing the package hierarchy twice
        package Foo::XXX::YYY;
        use package::compute "../../Bar";
        ####
    
-       ### Climbing the package heirarchy twice - shortcut
+       ### Climbing the package hierarchy twice - shortcut
        package Foo::XXX::YYY;
        use package::compute ".../Bar";
        ####
