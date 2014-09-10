@@ -18,9 +18,9 @@ SYNOPSIS
 
 DESCRIPTION
     This module allows you to compute package names on the fly at compile
-    time, rather than hard-coding them as barewords. It is the solution to
-    the problem (if indeed you consider it to be a problem at all) that you
-    cannot write this in Perl:
+    time, rather than hard-coding them as barewords. It is the solution to the
+    problem (if indeed you consider it to be a problem at all) that you cannot
+    write this in Perl:
 
        package $blah;
 
@@ -33,15 +33,15 @@ DESCRIPTION
 
        use package::compute EXPR;
 
-    Where EXPR is an arbitrary expression which will (caveat!) be evaluated
-    at compile time, and interpreted roughly the way Perl interprets package
+    Where EXPR is an arbitrary expression which will (caveat!) be evaluated at
+    compile time, and interpreted roughly the way Perl interprets package
     names, with the following bonus features:
 
     *   If the package name expression is a coderef, then that coderef is
         called and the return value is used instead.
 
-    *   Slashes may be used to separate package name components in addition
-        to the usual Perl "::" and deprecated "'" package separators.
+    *   Slashes may be used to separate package name components in addition to
+        the usual Perl "::" and deprecated "'" package separators.
 
     *   The component "." at the start of the package name refers to the
         caller. ("." elsewhere is a no-op.)
@@ -85,8 +85,8 @@ DESCRIPTION
 
        use package::compute -filename;
 
-    Which will attempt to determine the package name based on the filename
-    it is defined in, much like "autopackage" does.
+    Which will attempt to determine the package name based on the filename it
+    is defined in, much like `autopackage` does.
 
     Also:
 
@@ -97,9 +97,9 @@ DESCRIPTION
   Utility Function
     This module also exports a utility function:
 
-    "__RPACKAGE__($name)"
-        Returns a package name as a string, computed in the same way as "use
-        package::compute" does. An example of its use for object-oriented
+    `__RPACKAGE__($name)`
+        Returns a package name as a string, computed in the same way as `use
+        package::compute` does. An example of its use for object-oriented
         code:
 
                 package MyProject;
@@ -112,13 +112,13 @@ DESCRIPTION
         
                 my $bob = __RPACKAGE__('./Person')->new(name => "Robert");
 
-        As you can see, this makes it possible to avoid hard-coded
-        references to the MyProject::Person class.
+        As you can see, this makes it possible to avoid hard-coded references
+        to the MyProject::Person class.
 
-        "__RPACKAGE__" doesn't support the special "-filename" and "-anon"
+        `__RPACKAGE__` doesn't support the special `-filename` and `-anon`
         options.
 
-        It is possible to import the "__RPACKAGE__" function alone, without
+        It is possible to import the `__RPACKAGE__` function alone, without
         the package declaration magic using:
 
            use package::compute undef;
@@ -136,8 +136,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
